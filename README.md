@@ -65,3 +65,62 @@ It will stop the current netstats client processes, automatically detect your et
 [travis-url]: https://travis-ci.org/cubedro/eth-net-intelligence-api
 [dep-image]: https://david-dm.org/cubedro/eth-net-intelligence-api.svg
 [dep-url]: https://david-dm.org/cubedro/eth-net-intelligence-api
+
+## Run on a macbook
+Command history (Jun 2018):
+```
+503  git clone https://github.com/buidldao/eth-net-intelligence-api.git
+  504  cd eth-net-intelligence-api/
+  505  c
+  506  ls -la
+  507  npm install
+  508  c
+  509  head package.json 
+  510  cd ~/bin
+  511  node ./app.js
+  512  c
+  513  sudo npm install -g pm2
+  514  npm install -g pm2
+  515  sudo npm install -g pm2
+  516  bash netstatconf.sh 1 parity http://localhost:3000 "chosen_secret" > app.json
+  517  c
+  518  touch netstatconf.sh
+  519  atom netstatconf.sh 
+  520  chmod +x netstatconf.sh 
+  521  bash netstatconf.sh 1 parity http://localhost:3000 "chosen_secret" > app.json
+  522  cat app.js
+  523  cat app.json
+  524  c
+  525  pm2
+  526  c
+  527  pm2 start app.json
+  528  pm2 show 58510
+  529  pm2 start app.json
+  530  pm2 show 58647
+  531  c
+  532  ls -la
+  533  sudo nano app.js
+  534  sudo nano app.json
+  535  c
+  536  pm2 start app.json
+  537  sudo nano app.json
+  538  pm2 start app.json
+  539  sudo nano app.json
+  540  c
+  541  pm2 start app.json
+  542  pm2 show 58838
+  543  sudo nano app.json
+  544  pm2 start app.json
+  545  pm2 show 58920
+  546  sudo nano app.json
+  547  pm2 start app.json
+  548  sudo nano app.json
+  549  c
+  550  pm2 start app.json
+  551  h
+  552  c
+  553  h
+
+```
+
+For a local parity network, modify ```app.json``` with port `8545` 

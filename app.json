@@ -1,24 +1,21 @@
 [
   {
-    "name"              : "node-app",
-    "script"            : "app.js",
+    "name"        : "parity-0",
+    "cwd"         : ".",
+    "script"      : "app.js",
     "log_date_format"   : "YYYY-MM-DD HH:mm Z",
-    "merge_logs"        : false,
-    "watch"             : false,
-    "max_restarts"      : 10,
+    "merge_logs"    : false,
+    "watch"       : false,
     "exec_interpreter"  : "node",
-    "exec_mode"         : "fork_mode",
+    "exec_mode"     : "fork_mode",
     "env":
     {
-      "NODE_ENV"        : "production",
-      "RPC_HOST"        : "localhost",
-      "RPC_PORT"        : "8545",
-      "LISTENING_PORT"  : "30303",
-      "INSTANCE_NAME"   : "",
-      "CONTACT_DETAILS" : "",
-      "WS_SERVER"       : "wss://rpc.ethstats.net",
-      "WS_SECRET"       : "see http://forum.ethereum.org/discussion/2112/how-to-add-yourself-to-the-stats-dashboard-its-not-automatic",
-      "VERBOSITY"       : 2
+      "NODE_ENV"    : "production",
+      "RPC_HOST"    : "localhost",
+      "RPC_PORT"    : "8545",
+      "INSTANCE_NAME"   : "parity-0",
+      "WS_SERVER"     : "http://localhost:3000",
+      "WS_SECRET"     : "chosen_secret",
     }
-  }
+  },
 ]
